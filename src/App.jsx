@@ -1,17 +1,12 @@
-import { useState, useEffect } from "react";
 import "./App.css";
+import Header from "./Header";
 
 function App() {
-  const [theme, setTheme] = useState("light");
-
-  useEffect(() => {
-    document.querySelector("body").setAttribute("data-rm-theme", theme);
-  }, [theme]);
-
-  const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
-  };
-  return <div></div>;
+  return (
+    <div className="app-container">
+      <Header />
+    </div>
+  );
 }
 
 export default App;

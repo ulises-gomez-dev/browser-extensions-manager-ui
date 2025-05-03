@@ -1,0 +1,4 @@
+.app-container {
+  margin: var(--spacing-500) 8.44rem var(--spacing-800) 8.44rem;
+  max-width: 90rem;
+}

@@ -1,0 +1,33 @@
+.logo-header {
+  background-color: var(--bg-color-secondary);
+  border-radius: var(--radius-20);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-200) var(--spacing-150);
+  border: var(--logo-header-border);
+  box-shadow: var(--logo-header-box-shadow);
+}
+
+.logo-header .logo path:nth-child(1) {
+  fill: var(--logo-icon-color);
+}
+
+.logo-header .logo path:nth-child(2) {
+  fill: var(--logo-title-color);
+}
+
+.app-theme-toggle {
+  background-color: var(--bg-color-theme-toggle);
+  border: none;
+  border-radius: var(--radius-12);
+  width: 3.125rem;
+  height: 3.125rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-theme-toggle:hover {
+  background-color: var(--bg-color-theme-toggle-hover);
+}
