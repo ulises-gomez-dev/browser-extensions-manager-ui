@@ -1,0 +1,31 @@
+.filter-tab {
+  border: none;
+  border-radius: var(--radius-full);
+  padding: var(--spacing-100) var(--spacing-250) var(--spacing-125)
+    var(--spacing-250);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  line-height: 140%;
+  letter-spacing: -0.01875rem;
+  background-color: white;
+}
+
+.filter-tab:hover {
+  opacity: 0.7;
+}
+
+.filter-tab:focus {
+  box-shadow: 0px 0px 0px 2px var(--neutral-200, #d6e2f5),
+    0px 0px 0px 4px var(--red-400, #f25c54);
+}
+
+.filter-tab:active {
+  background-color: aqua;
+}
+
+body[data-rm-theme="dark"] .filter-tab {
+  background: var(--neutral-700);
+  color: var(--neutral-0);
+}

@@ -53,6 +53,8 @@
   --logo-title-color: var(--neutral-900);
   --logo-header-border: 1px solid var(--neutral-200);
   --logo-header-box-shadow: 0px 2px 3px 0px #d6e2f5;
+
+  --title-color: var(--neutral-900);
 }
 
 [data-rm-theme="dark"] {
@@ -65,6 +67,8 @@
   --logo-title-color: #fff;
   --logo-header-border: none;
   --logo-header-box-shadow: none;
+
+  --title-color: var(--neutral-0);
 }
 
 * {
@@ -87,4 +91,8 @@ html {
 
 body {
   background: var(--bg-color);
+}
+
+h1 {
+  color: var(--title-color);
 }
