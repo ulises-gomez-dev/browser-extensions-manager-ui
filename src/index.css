@@ -43,7 +43,7 @@
   --radius-full: 999px;
 }
 
-[data-rm-theme="light"] {
+.light {
   --bg-color: var(--light-gradient);
   --bg-color-secondary: var(--neutral-0);
   --bg-color-theme-toggle: var(--neutral-100);
@@ -54,10 +54,10 @@
   --logo-header-border: 1px solid var(--neutral-200);
   --logo-header-box-shadow: 0px 2px 3px 0px #d6e2f5;
 
-  --title-color: var(--neutral-900);
+  --header-title-color: var(--neutral-900);
 }
 
-[data-rm-theme="dark"] {
+.dark {
   --bg-color: var(--dark-gradient);
   --bg-color-secondary: var(--neutral-800);
   --bg-color-theme-toggle: var(--neutral-700);
@@ -68,7 +68,7 @@
   --logo-header-border: none;
   --logo-header-box-shadow: none;
 
-  --title-color: var(--neutral-0);
+  --header-title-color: var(--neutral-0);
 }
 
 * {
@@ -94,5 +94,5 @@ body {
 }
 
 h1 {
-  color: var(--title-color);
+  color: var(--header-title-color);
 }

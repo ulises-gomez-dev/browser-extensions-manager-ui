@@ -1,16 +1,13 @@
-import { useState } from "react";
 import "./Button.css";
 
-function Button({ label }) {
-  const [isActive, setIsActive] = useState(false);
-
-  const handleClick = () => {
-    setIsActive(isActive ? false : true);
-  };
-
+function Button({ className, clickHandler, label }) {
   return (
-    <button className="filter-tab" onClick={handleClick}>
-      {label}
+    <button
+      className={`filter-tab ${className}`}
+      onClick={clickHandler}
+      onMouseDown={(e) => e.preventDefault()}
+    >
+      <p className="filter-tab-text">{label}</p>
     </button>
   );
 }

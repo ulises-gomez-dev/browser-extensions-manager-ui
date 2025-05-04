@@ -7,9 +7,7 @@ import "./Header.css";
 function Header() {
   const [theme, setTheme] = useState("light");
 
-  useEffect(() => {
-    document.querySelector("body").setAttribute("data-rm-theme", theme);
-  }, [theme]);
+  document.body.className = theme;
 
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
